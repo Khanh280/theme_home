@@ -1,10 +1,11 @@
+@import "global.module";
 .header {
   width: 100%;
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5rem;
+  padding: var(--padding-x);
   height: 4rem;
   z-index: 1;
 }
@@ -114,6 +115,7 @@
 
 .boxNavigate {
   //height: 100%;
+  padding-left: 10% ;
   min-width: 30rem !important;
 }
 

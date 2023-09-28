@@ -9,9 +9,6 @@ import {HomePage} from "./component/HomePage";
 
 
 function App() {
-
-
-
     return (
         <>
             <Header/>

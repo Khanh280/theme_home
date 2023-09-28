@@ -1,6 +1,8 @@
-.cartContent{
+@import "global.module";
+.cartContent {
   margin: 3rem 0;
 }
+
 .titlePopular {
   margin-bottom: 2rem;
 }
@@ -10,6 +12,8 @@
   display: flex;
   justify-content: center;
 }
+
+
 
 .subTitlePopular {
   color: #a4a9b5;
@@ -22,10 +26,11 @@
   justify-content: center;
   display: flex;
   border-radius: 5px;
-  padding: 0!important;
+  padding: 0 !important;
   transition: transform 0.3s;
 }
-.cart:hover{
+
+.cart:hover {
   transform: translateY(-5px);
   box-shadow: 0px 16px 17px -5px #80808066;
 }

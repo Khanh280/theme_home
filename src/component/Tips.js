@@ -8,10 +8,9 @@ import React from "react";
 import styles from "../css/popular.module.scss"
 import stylesBestTrip from "../css/bestTrip.module.scss"
 import stylesTips from "../css/tips.module.scss"
-import styleGlobal from "../css/global.module.scss"
+import stylesGlobal from "../css/global.module.scss"
 import Grid from '@mui/material/Unstable_Grid2';
 import Container from "@mui/material/Container";
-
 export function Tips() {
     return (
         <>
@@ -22,10 +21,9 @@ export function Tips() {
                         world</h6>
                 </div>
                 <div>
-                    <Grid container spacing={2}
-                          style={{padding: "0 5rem", display: "flex", justifyContent: "space-between"}} md={12}>
+                    <Grid container spacing={2} md={12} className={clsx(stylesGlobal.cartPadding)}>
                         <Grid xs={12} ms={6} md={3.7}>
-                            <Grid className={clsx(styleGlobal.cart)}>
+                            <Grid className={clsx(stylesGlobal.cart)}>
                                 <div className={clsx(stylesBestTrip.cardImage)}>
                                     <img className={clsx(styles.cartImage)}
                                          src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/photo-1469920783271-4ee08a94d42d-960x636.jpg"
@@ -47,7 +45,7 @@ export function Tips() {
                             </Grid>
                         </Grid>
                         <Grid xs={12} ms={6} md={3.7}>
-                            <Grid className={clsx(styleGlobal.cart)}>
+                            <Grid className={clsx(stylesGlobal.cart)}>
                                 <div className={clsx(stylesBestTrip.cardImage)}>
                                     <img className={clsx(styles.cartImage)}
                                          src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-212388-960x636.jpeg"
@@ -69,7 +67,7 @@ export function Tips() {
                             </Grid>
                         </Grid>
                         <Grid xs={12} ms={6} md={3.7}>
-                            <Grid className={clsx(styleGlobal.cart)}>
+                            <Grid className={clsx(stylesGlobal.cart)}>
                                 <div className={clsx(stylesBestTrip.cardImage)}>
                                     <img className={clsx(styles.cartImage)}
                                          src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-24484-960x636.jpg"

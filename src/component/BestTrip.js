@@ -6,6 +6,8 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import React from "react";
 import styles from "../css/popular.module.scss"
 import stylesBestTrip from "../css/bestTrip.module.scss"
+import stylesGlobal from "../css/global.module.scss"
+
 import Grid from '@mui/material/Unstable_Grid2';
 
 export function BestTrip() {
@@ -17,8 +19,7 @@ export function BestTrip() {
                     <h6 className={clsx(styles.subTitlePopular)}>Best offers trips from us</h6>
                 </div>
                 <div>
-                    <Grid container spacing={2}
-                          style={{padding: "0 5rem", display: "flex", justifyContent: "space-between"}} md={12}>
+                    <Grid container spacing={2} md={12} className={clsx(stylesGlobal.cartPadding)}>
                         <Grid  sm={12} md={3.7}>
                             <Grid className={clsx(stylesBestTrip.cardBestTrip)}>
                                 <div className={clsx(stylesBestTrip.cardImage)}>
